@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="-106dp"
+        tools:layout_editor_absoluteY="-57dp"
+        tools:visibility="visible">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pict2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    tools:layout_editor_absoluteX="23dp"
+                    tools:layout_editor_absoluteY="32dp">
+
+                    <ImageView
+                        android:id="@+id/view"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/circle"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/logo"
+                        tools:ignore="NotSibling" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="73dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="imagebutton"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/view"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/baseline_person_24" />
+
+                    <TextView
+                        android:id="@+id/textv2"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Wanderlog"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.321"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.384" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="345dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/mumbai"
+                        android:layout_width="340dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/cardview_shadow_end_color"
+                        android:contentDescription="Mumbai"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/mumbai1button" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mumbai"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.097"
+                        app:layout_constraintStart_toStartOf="@+id/mumbai"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="345dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/hyderabad"
+                        android:layout_width="340dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/cardview_shadow_end_color"
+                        android:contentDescription="Hyderabad"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/hyderabad" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hyderabad"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.097"
+                        app:layout_constraintStart_toStartOf="@+id/hyderabad"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="345dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/kerala"
+                        android:layout_width="340dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/cardview_shadow_end_color"
+                        android:contentDescription="Hyderabad"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.562"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.4"
+                        app:srcCompat="@mipmap/kerala" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kerala"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.097"
+                        app:layout_constraintStart_toStartOf="@+id/kerala"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="345dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/delhi"
+                        android:layout_width="340dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/cardview_shadow_end_color"
+                        android:contentDescription="Hyderabad"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/delhi" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.097"
+                        app:layout_constraintStart_toStartOf="@+id/delhi"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="345dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/kolkata"
+                        android:layout_width="340dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/cardview_shadow_end_color"
+                        android:contentDescription="Hyderabad"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/kolkata" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kolkata"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.097"
+                        app:layout_constraintStart_toStartOf="@+id/kolkata"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="345dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/jammu"
+                        android:layout_width="340dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/cardview_shadow_end_color"
+                        android:contentDescription="Hyderabad"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/jammu" />
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jammu Kashmir"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.097"
+                        app:layout_constraintStart_toStartOf="@+id/jammu"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="345dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/vizag"
+                        android:layout_width="340dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/cardview_shadow_end_color"
+                        android:contentDescription="Hyderabad"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/vizag" />
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vizag"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.097"
+                        app:layout_constraintStart_toStartOf="@+id/vizag"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
